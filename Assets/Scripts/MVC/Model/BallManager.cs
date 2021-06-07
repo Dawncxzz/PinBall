@@ -28,7 +28,7 @@ public class BallManager : BaseManager<BallManager>
 
     public void SetVelocity(float velocity)
     {
-        m_ball.velocity = velocity;
+        m_ball.velocity = Mathf.Clamp(velocity,0.1f,0.5f);
     }
 
     public Vector2 GetDir()

@@ -15,11 +15,11 @@ D:/aboutunity/unityproject/PinBall
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-5897
+19731
 Successfully changed project path to: D:/aboutunity/unityproject/PinBall
 D:/aboutunity/unityproject/PinBall
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 33.42 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 32.68 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.8f1c1 (0b92326fa640)
 [Subsystems] Discovering subsystems at path D:/aboutunity/unity/2020.3.8f1c1/Editor/Data/Resources/UnitySubsystems
@@ -35,29 +35,29 @@ Initialize mono
 Mono path[0] = 'D:/aboutunity/unity/2020.3.8f1c1/Editor/Data/Managed'
 Mono path[1] = 'D:/aboutunity/unity/2020.3.8f1c1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'D:/aboutunity/unity/2020.3.8f1c1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56372
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56204
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: D:/aboutunity/unity/2020.3.8f1c1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001009 seconds.
+Registered in 0.001103 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 32.78 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 33.63 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.779 seconds
+- Completed reload, in  1.507 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.000795 seconds.
+Registered in 0.000651 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 31.84 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 32.35 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.869 seconds
+- Completed reload, in  0.863 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
 Refreshing native plugins compatible for Editor in 0.52 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1745 Unused Serialized files (Serialized files now loaded: 0)
@@ -65,13 +65,69 @@ System memory in use before: 88.1 MB.
 System memory in use after: 88.2 MB.
 
 Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 2194.
-Total: 2.309100 ms (FindLiveObjects: 0.214500 ms CreateObjectMapping: 0.061600 ms MarkObjects: 1.972500 ms  DeleteObjects: 0.059200 ms)
+Total: 2.088100 ms (FindLiveObjects: 0.191200 ms CreateObjectMapping: 0.048600 ms MarkObjects: 1.789400 ms  DeleteObjects: 0.057900 ms)
 
 ========================================================================
 Received Import Request.
   path: Assets/Scripts/MVC/Controller/BallController.cs
   artifactKey: Guid(4eab63959fc57454b8ae54316151aa31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/MVC/Controller/BallController.cs using Guid(4eab63959fc57454b8ae54316151aa31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7f1abd1bd84294a1f7f2b70b5afca83') in 0.036838 seconds
-  Import took 0.039232 seconds .
+Start importing Assets/Scripts/MVC/Controller/BallController.cs using Guid(4eab63959fc57454b8ae54316151aa31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88407a7aa93ad6e173f900150ae7f7fa') in 0.059629 seconds
+  Import took 0.062740 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000710 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.33 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.804 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.53 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1736 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 87.7 MB.
+System memory in use after: 87.8 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2198.
+Total: 2.017300 ms (FindLiveObjects: 0.182300 ms CreateObjectMapping: 0.058400 ms MarkObjects: 1.759700 ms  DeleteObjects: 0.015700 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 107.743320 seconds.
+  path: Assets/Scripts/MVC/Controller/BallController.cs
+  artifactKey: Guid(4eab63959fc57454b8ae54316151aa31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MVC/Controller/BallController.cs using Guid(4eab63959fc57454b8ae54316151aa31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '083626e566006064ccd2230cc17aeea7') in 0.006553 seconds
+  Import took 0.009121 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.630044 seconds.
+  path: Assets/Scripts/MVC/Controller/BallController.cs
+  artifactKey: Guid(4eab63959fc57454b8ae54316151aa31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/MVC/Controller/BallController.cs using Guid(4eab63959fc57454b8ae54316151aa31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '083626e566006064ccd2230cc17aeea7') in 0.003450 seconds
+  Import took 0.006153 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000723 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.33 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.808 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.34 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1736 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 87.7 MB.
+System memory in use after: 87.8 MB.
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 2202.
+Total: 2.018700 ms (FindLiveObjects: 0.164400 ms CreateObjectMapping: 0.048500 ms MarkObjects: 1.790500 ms  DeleteObjects: 0.014300 ms)
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file

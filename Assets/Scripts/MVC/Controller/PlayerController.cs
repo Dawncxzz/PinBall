@@ -34,8 +34,8 @@ public class PlayerController : MonoBehaviour
         {
             Vector3 newPos;
             newPos = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, 10.0f)) - offset;
-            newPos.x = Mathf.Clamp(newPos.x, (float)-3.529546, (float)3.549547);
-            newPos.y = Mathf.Clamp(newPos.y, (float)-5.512787, (float)0.530581);
+            newPos.x = Mathf.Clamp(newPos.x, -3.529546f, 3.549547f);
+            newPos.y = Mathf.Clamp(newPos.y, -5.512787f, 0.530581f);
             //newPos.x = Mathf.Clamp(newPos.x, dirValue["left"], dirValue["right"]);
             //newPos.y = Mathf.Clamp(newPos.y, dirValue["down"], dirValue["up"]);
             transform.position = Vector3.Lerp(transform.position, newPos, velocity * Time.deltaTime);

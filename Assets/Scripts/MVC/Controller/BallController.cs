@@ -2,6 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Ball¿ØÖÆÆ÷
+/// </summary>
 public class BallController : MonoBehaviour
 {
     [Range(0, 1)]
@@ -63,6 +66,11 @@ public class BallController : MonoBehaviour
         Vector2 ballFactor = Vector2.Reflect(m_ballManager.GetDir(), new Vector2(0, 1)) * m_ballManager.GetVelocity();
         Vector2 playerFactor = m_PlayManager.GetDir() * m_PlayManager.GetVelocity();
         Vector2 newDir = (ballFactor + playerFactor).normalized;
+        if ((ballFactor + playerFactor).y < 0)
+        {
+            newDir.y = ballFactor.y;
+            newDir.Normalize();
+        }
         m_ballManager.SetDir(newDir);
         float newVel = m_PlayManager.GetVelocity();
         m_ballManager.SetVelocity(newVel * velocity);
