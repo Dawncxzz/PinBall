@@ -5,6 +5,7 @@ using UnityEngine;
 public class CubeManager: BaseManager<CubeManager>
 {
     private List<Cube> curArray = new List<Cube>();
+
     public Cube AddCube(string cubeName)
     {
         Cube cube;
@@ -33,6 +34,14 @@ public class CubeManager: BaseManager<CubeManager>
     public void DeleteCube(Cube cube)
     {
         curArray.Remove(cube);
+    }
+    public bool isEmpty()
+    {
+        if (curArray.Count <= 0)
+        {
+            return true;
+        }
+        return false;
     }
 }
 public abstract class Cube

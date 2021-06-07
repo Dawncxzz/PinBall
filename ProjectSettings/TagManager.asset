@@ -9,6 +9,7 @@ TagManager:
   - WallUp
   - WallDown
   - Ball
+  - Cube
   layers:
   - Default
   - TransparentFX

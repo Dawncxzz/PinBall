@@ -32,6 +32,10 @@ public class BallController : MonoBehaviour
     public void OnCollisionEnter2D(Collision2D collision)
     {
         string tag = collision.gameObject.tag;
+        if (tag == "Cube")
+        {
+            HitCube(CubeManager.GetInstance(), collision);
+        }
         if (tag == "Player")
         {
             HitPlayer(PlayerManager.GetInstance());
@@ -68,5 +72,36 @@ public class BallController : MonoBehaviour
     {
         Vector2 newDir = Vector2.Reflect(m_ballManager.GetDir(), normal);
         m_ballManager.SetDir(newDir);
+    }
+
+    public void HitCube(CubeManager m_cubeManager, Collision2D cube)
+    {
+        Vector2 hitPos = cube.contacts[0].point;
+        Vector2 cubePos = new Vector2(cube.transform.position.x, cube.transform.position.y);
+        Vector2 dir = (hitPos - cubePos).normalized;
+        float angleUp = Vector2.Angle(Vector2.up, dir);
+        float angleDown = Vector2.Angle(Vector2.down, dir);
+        float angleLeft = Vector2.Angle(Vector2.left, dir);
+        float angleRight = Vector2.Angle(Vector2.right, dir);
+        if (Mathf.Cos(Mathf.Deg2Rad * angleUp) >= (Mathf.Cos(Mathf.Deg2Rad * 45)))
+        {
+            m_ballManager.SetDir(Vector2.Reflect(m_ballManager.GetDir(), Vector2.up));
+        }
+        else if (Mathf.Cos(Mathf.Deg2Rad * angleDown) >= (Mathf.Cos(Mathf.Deg2Rad * 45)))
+        {
+            m_ballManager.SetDir(Vector2.Reflect(m_ballManager.GetDir(), Vector2.down));
+        }
+        else if (Mathf.Cos(Mathf.Deg2Rad * angleLeft) > (Mathf.Cos(Mathf.Deg2Rad * 45)))
+        {
+            m_ballManager.SetDir(Vector2.Reflect(m_ballManager.GetDir(), Vector2.left));
+        }
+        else if (Mathf.Cos(Mathf.Deg2Rad * angleRight) > (Mathf.Cos(Mathf.Deg2Rad * 45)))
+        {
+            m_ballManager.SetDir(Vector2.Reflect(m_ballManager.GetDir(), Vector2.right));
+        }
+        else
+        {
+            Debug.LogError("Åö×²´íÎó");
+        }
     }
 }

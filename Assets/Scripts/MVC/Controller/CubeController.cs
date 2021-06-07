@@ -34,6 +34,11 @@ public class CubeController : MonoBehaviour
     {
         m_cubeManager.DeleteCube(m_cube);
         Destroy(gameObject);
+        if (m_cubeManager.isEmpty())
+        {
+            Debug.LogError("ƒ„”Æ¡À");
+        }
+        return;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
